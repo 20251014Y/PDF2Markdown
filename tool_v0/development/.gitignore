@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pdf2md-cache/
+output/
+tmp/
+.venv-mineru/
+.models/
+.runtime-home/
+.pdf2md-mineru-work/

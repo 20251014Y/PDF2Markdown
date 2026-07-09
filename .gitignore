@@ -1,0 +1,37 @@
+# User documents and generated conversion results
+*.pdf
+input/*
+output/*
+!input/.gitkeep
+!output/.gitkeep
+!input/README.md
+!output/README.md
+
+# Local runtime, models, caches, credentials
+tool_v0/.python/
+tool_v0/.python-dev/
+tool_v0/.models/
+tool_v0/.runtime-home/
+tool_v0/**/__pycache__/
+tool_v0/**/*.pyc
+tool_v0/**/credentials.bin
+tool_v0/**/diagnostics/
+tool_v0/**/progress/
+tool_v0/**/*.log
+tool_v0/**/*.pid
+
+# Local editor / assistant / Obsidian state
+.obsidian/
+.agents/
+.codex/
+ppt制作/
+
+# Temporary build artifacts
+PDF2Markdown_GitHub_Ready/
+~PDF2Markdown*.CAB
+tool_v0/development/installer/payload.zip
+tool_v0/development/installer/installer.sed
+
+# OS clutter
+Thumbs.db
+Desktop.ini
