@@ -1,23 +1,16 @@
 # PDF2Markdown v0
 
-PDF2Markdown 是一个把 PDF 转换为 Markdown 的 Windows 工具，支持正文、公式、图片、表格和每篇文档的转换报告整理。
+PDF2Markdown 是一个 Windows 工具，用于把 PDF 转换为适合阅读和整理的 Markdown 文档。它会尽量保留正文、公式、图片、表格，并为每篇文档生成转换报告。
 
-这个 GitHub 仓库只用于普通用户下载，不提供源码运行入口。
+## 下载与安装
 
-## 普通用户怎么用
-
-请只下载并运行这个文件：
+请下载并双击运行：
 
 ```text
 PDF2Markdown-Installer_v0.exe
 ```
 
-不要直接下载 `Code → Download ZIP` 后运行里面的文件。  
-如果你下载了源码 zip，里面也只有安装器是给普通用户双击的入口。
-
-## 安装后会发生什么
-
-双击 `PDF2Markdown-Installer_v0.exe` 后，安装器会让你选择一种模式：
+这是联网引导安装器。安装时可以选择：
 
 ### Local 模式
 
@@ -35,11 +28,9 @@ PDF2Markdown-Installer_v0.exe
 - 预计安装后大小约 100–300 MB。
 - 适合希望安装轻、转换快的用户。
 
-## 安装完成后怎么转换 PDF
+## 安装完成后怎么用
 
-安装完成后，请进入安装目录，而不是 GitHub 下载目录。
-
-例如 Local 模式：
+进入安装后的项目文件夹，例如：
 
 ```text
 Downloads/PDF2Markdown_Local/
@@ -52,7 +43,7 @@ Downloads/PDF2Markdown_Local/
 3. 转换结果会出现在 `output/原PDF文件名/`。
 4. 主要查看 `article.md` 和该文档的 `README.md`。
 
-## 输出结果包含什么
+## 输出结果
 
 每篇 PDF 会生成一个独立文件夹，通常包含：
 
@@ -64,11 +55,11 @@ assets/figures/
 
 - `article.md`：转换后的 Markdown 正文。
 - `assets/figures/`：正文引用的图片。
-- `README.md`：该篇文档的转换记录、耗时、模式和准确性提醒。
+- `README.md`：该文档的转换记录、耗时、模式和准确性提醒。
 
 ## 重要提醒
 
-- 这个安装包是联网引导安装器，不是离线完整包。
+- 这个安装包不是离线完整包，首次安装需要联网下载依赖。
 - 仓库不包含用户 PDF、转换结果、本地模型、Python 环境或 API Token。
 - Local 模式会在安装时下载较大的本地模型。
 - API 模式会把 PDF 上传到 MinerU 服务端解析。
@@ -82,21 +73,17 @@ assets/figures/
 The system cannot find the path specified.
 ```
 
-通常说明你运行错了文件。
-
-请确认你运行的是：
-
-```text
-PDF2Markdown-Installer_v0.exe
-```
-
-而不是源码目录里的 `.cmd` 文件。
-
-安装完成后，才运行安装目录里的：
+通常说明运行入口不对。请确认你运行的是安装后的主入口：
 
 ```text
 PDF2Markdown_Local.cmd
 PDF2Markdown_API.cmd
+```
+
+如果还没有安装，请先运行：
+
+```text
+PDF2Markdown-Installer_v0.exe
 ```
 
 ## 版本
@@ -108,3 +95,4 @@ PDF2Markdown_API.cmd
 作者邮箱：kezheng_yan@126.com
 
 学术萌新，欢迎交流！
+
