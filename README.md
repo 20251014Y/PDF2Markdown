@@ -103,3 +103,8 @@ PDF2Markdown_API.cmd
 
 当前发布版本：v0
 
+## 联系作者
+
+作者邮箱：kezheng_yan@126.com
+
+学术萌新，欢迎交流！
